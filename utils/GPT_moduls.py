@@ -22,7 +22,7 @@ class GPT3_start_up:
     def __init__(self, API_KEY , Azure_Mode = False):        
         self.completion = ai.Completion()        
         if Azure_Mode == True:
-            ai.api_key = API_KEY
+            ai.api_key = API_KEY #"af373b251ff341b080a34fc0c64dcd49"
             # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/
             ai.api_base =  "https://openai-wistron.openai.azure.com/" 
             ai.api_type = 'azure'
@@ -89,7 +89,7 @@ def GPT_emotional_level(prompt_Q  , API_KEY):
     return response.choices[0].text
     
 if __name__ == "__main__":
-    GPT = GPT3_start_up(API_KEY='af373b251ff341b080a34fc0c64dcd49')  #af373b251ff341b080a34fc0c64dcd49  w9WhTyKCMgDGrk0CXKWTT3BlbkFJBp5HnPt6A1RbSKTixEka
+    GPT = GPT3_start_up(API_KEY='abcd')  
     start_chat_log = GPT.crerat_standard_chart_log(script_path='../Script_data/w_hotel/w_hotel_route.txt',
                                                    test_mode=(False, {
                                                        'QA_path': '../Script_data/w_hotel/addition/Question_append.json'}))
