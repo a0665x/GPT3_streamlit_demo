@@ -13,5 +13,5 @@ streamlit run GPT3_streamlit.py
 
 ###
 # just run from streamlit cloud , i already deploy on cloud service, just click the webside as below:
-
+https://a0665x-gpt3-streamlit-demo-gpt3-streamlit-2ec4ga.streamlit.app/
 
