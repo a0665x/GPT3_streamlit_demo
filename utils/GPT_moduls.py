@@ -25,7 +25,7 @@ class GPT3_start_up:
             ai.api_key = API_KEY
             # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/
             ai.api_base =  "https://openai-wistron.openai.azure.com/" 
-            ai.api_type = 'azure'
+            ai.api_type = <openai> or <azure> 
             ai.api_version = '2022-06-01-preview' # this may change in the future
             self.model = deployment_id='hotel_1' #This will correspond to the custom name you chose for your deployment when you deployed a model. 
         elif Azure_Mode == False:
