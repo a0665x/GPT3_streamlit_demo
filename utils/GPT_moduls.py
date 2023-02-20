@@ -22,7 +22,7 @@ class GPT3_start_up:
     def __init__(self, API_KEY , Azure_Mode = False):        
         self.completion = ai.Completion()        
         if Azure_Mode == True:
-            ai.api_key = API_KEY #"af373b251ff341b080a34fc0c64dcd49"
+            ai.api_key = API_KEY
             # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/
             ai.api_base =  "https://openai-wistron.openai.azure.com/" 
             ai.api_type = 'azure'
